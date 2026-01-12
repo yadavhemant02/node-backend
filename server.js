@@ -12,9 +12,9 @@ const PUBLIC_HOST = process.env.SWAGGER_HOST || `${BIND_HOST}:${PORT}`;
 
 connectDB()
     .then(() => {
-        // app.listen(PORT, BIND_HOST, () => {
-        //     console.log(`✓ Server is running on https://${PUBLIC_HOST}`);
-        // });
+        app.listen(PORT, BIND_HOST, () => {
+            console.log(`✓ Server is running on https://${PUBLIC_HOST}`);
+        });
     })
     .catch((error) => {
         console.error('✗ Failed to start server:', error.message);
