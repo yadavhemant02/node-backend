@@ -13,7 +13,7 @@ const app = require('./app');
 let isConnected = false;
 async function connectToMongoDB() {
   try {
-    await mongoose.connect("mongodb+srv://yadavhemant9719_db_user:Hemant$9719@cluster0.nt0ymv8.mongodb.net/?appName=Cluster0/lerning", {
+    await mongoose.connect('mongodb+srv://yadavhemant9719_db_user:Hemant$9719@cluster0.nt0ymv8.mongodb.net/?appName=Cluster0/lerning', {
       useNewUrlParser: true,
       useUnifiedTopology: true
     });
