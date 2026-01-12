@@ -3,7 +3,7 @@ const swaggerAutogen = require('swagger-autogen')();
 const fs = require('fs');
 
 // Use environment variables for Swagger configuration
-const host = process.env.SWAGGER_HOST || 'localhost:3000';
+const host = 'node-backend-4amops4c1-yadavhemant02s-projects.vercel.app';
 const schemes = host.includes('localhost') ? ['http'] : ['https'];
 
 const doc = {
